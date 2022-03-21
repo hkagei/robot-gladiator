@@ -62,11 +62,16 @@ var fight = function(enemyName) {
   
       // check player's health
       if (playerHealth <= 0) {
-        window.alert(playerName + ' has died!');
+        window.alert("Welcome to Robot Gladiators! Round " + ( i + 1 ) );
         // leave while() loop if player is dead
         break;
       } else {
         window.alert(playerName + ' still has ' + playerHealth + ' health left.');
+        break;
+      } else {
+            window.alert("You have lost your robot in battle! Game Over!");
+            break;
+          }
       }
     } // end of while loop
   }; // end of fight function
